@@ -10,4 +10,4 @@ run:
 	docker run -it -v $(shell pwd):/app tennis bash
 
 test:
-	docker run -it -v $(shell pwd):/app tennis rspec tennis_test.rb 
+	docker run -it -v $(shell pwd):/app tennis ruby -Ilib:test tennis_test.rb
